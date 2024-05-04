@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Add your custom CSS styles here */
+        /* Grid background */
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 50px;
+            background-color: rgba(0, 0, 0, 0.2); /* 20% transparent gray */
+            background-image: 
+                linear-gradient(90deg, #d9d9d9 1px, transparent 1px),
+                linear-gradient(180deg, #d9d9d9 1px, transparent 1px);
+            background-size: 20px 20px;
+            text-align: justify;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 75%; /* Set header width to 75% */
+            margin-left: auto; /* Center the header */
+            margin-right: auto; /* Center the header */
+        }
+        .profile-pic {
+            max-width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .left-column {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            text-align: center; /* Align menu to center */
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .montserrat-font {
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        section {
+            margin-top: 50px;
+            padding: 30px; /* Increase padding */
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 2.5px;
+            font-size: 95%;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        @media (min-width: 768px) {
+            .left-column {
+                position: sticky;
+                top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="montserrat-font" style="font-size:350%">AESHITA DHIMAN</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="left-column">
+                    <img src="assets/profile_picture1.jpeg" alt="Profile Picture" class="profile-pic">
+                    <ul class="menu montserrat-font">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#professional-development">Professional Development</a></li>
+                        <!--<li><a href="#certifications">Certifications</a></li>-->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 montserrat-font">
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>Hello there!<br>
+                         With 5 years of industry experience, I've
+                         specialized in data engineering and natural language processing. <br>At Wipro Digital, I led the successful ContentAI initiative, optimizing algorithms
+                          and driving innovative solutions. Moreover, my expertise in engineering led to substantial savings of $16M through our anomaly detection platform. Beyond these achievements, I'm passionate about delving into data analysis,
+                           uncovering patterns, and insights.</p>
+                </section>
+
+                <section id="education">
+                    <h2>Education</h2>
+                    <p>
+                        <strong><span style="font-weight: bold;">Master of Engineering</span></strong> - <span>Electrical and Computer Engineering</span><br>
+                        <em>University of Windsor, Canada</em>
+                    </p>
+                    <p>
+                        <strong><span style="font-weight: bold;">Bachelor of Technology</span></strong> - <span>Computer Engineering</span><br>
+                        <em>Sardar Vallabhbhai National Institute of Technology, India</em>
+                    </p>
+                </section>
+
+                <section id="skills">
+                    <h2>Technical Skills</h2>
+                    <ul>
+                        <li><strong><span style="font-weight: bold;">Programming Languages and Framework -</span></strong>Python, PySpark, C, Flask, Django, HTML, CSS</li>
+                        <li><strong><span style="font-weight: bold;">Database and Query Languages -</span></strong> Hive Query Language (HQL), Structured Query Language (SQL), MySQL, Database Management Systems (DBMS)</li>
+                        <li><strong><span style="font-weight: bold;">Cloud Computing -</span></strong> Amazon Web Services (AWS), MapReduce</li>
+                        <li><strong><span style="font-weight: bold;">Data Visualization - </span></strong> Tableau, PowerBI</li>
+                    </ul>
+                </section>
+
+                <section id="experience">
+                    <h2>Experience</h2>
+                    <p><strong><span style="font-weight: bold;">Senior Software Developer</span></strong><br>
+                    <span style="font-size:90%;"> Wipro Digital, Bangalore, India</span>
+                    <em style="font-size: smaller; float: right;">Jun 2020 - Dec 2022</em></p>
+                    <ul>
+                        <li><span style="font-weight: bold;">ContentAI : Natural Language Generation</span><br><span style="font-size: 95%;"> Converted basic product features and related data into highly engaging product descriptions aligned with the company voice to help minimize dependencies and improve productivity using Large Language Models (LLMs)</li>
+                        <li>Presented initial ideology to internal stakeholders, with in-depth research on different methodologies and processes</li>
+                        <li>Developed Proof of Concept (PoC) for product deployment using Python and Flask</li>
+                        <li>Optimized base algorithm for storage and fine-tuned to align with customer voice</li>
+                    </ul>
+                    <p><strong><span style="font-weight: bold;">Data Analyst</span></strong><br>
+                        <span style="font-size:90%;">Wipro HOLMES, Bangalore, India</span>
+                        <em style="font-size: smaller; float: right;">Nov 2019 - May 2020</em></p>
+                    <ul>
+                        <li><span style="font-weight: bold;" >Tableau:</span> Engineered a store-based sales and revenue dashboard for a leading clothing brand providing key business insights and help identify sales hotspots and underperforming stores</li>
+                        <li><span style="font-weight: bold;" >PowerBI: </span>Built an interactive dashboard for monitoring various oil rig analytics empowering various client teams to take business decisions</li>
+                        <li><span style="font-weight: bold;" >Google Analytics:</span> Monitored website traffic, created custom events, goals, campaigns, and analyzed successful conversions. Built custom reports and dashboards to provide key insights for a more informed decision</li>
+                    </ul>
+                    <p><strong><span style="font-weight: bold;">Project Engineer - Big Data</span></strong><br>
+                        <span style="font-size:90%;">Wipro HOLMES, Bangalore, India</span>
+                    <em style="font-size: smaller; float: right;">Aug 2017 - Nov 2019</em></p>
+                    <ul>
+                        <li>Cloud-based anomaly detection platform that works with a company’s accounts payables in a procure to pay (P2P) cycle. It is aimed at detecting financial leakages and helps with a faster recovery period.</li>
+                        <li>Expanded product functionality to support both SAP and Oracle ERP data, elevating its capabilities beyond Oracle ERP compatibility and went on to receive the Prodigy Award at Wipro’s All Hands Meet 2020</li>
+                        <li>Achieved $16 million in savings by efficiently processing a years’ worth of overdue invoices for clients, landing the Alpha Squad Award for outstanding performance.</li>
+                        <li>Enhanced product capabilities through intelligent rules for vendor price comparisons</li>
+                        <li>Configured and maintained infrastructure on AWS for deployment of both client and internal applications</li>
+                    </ul>
+                </section>
+
+                <section id="professional-development">
+                    <h2>Professional Development</h2>
+                    <ul>
+                        <li><span style="font-weight: bold;">VentureU, EPICentre<br><span style="font-size: 95%;"> University of Windsor</span></span><br> Acquired expertise in ideation, market analysis, feedback analysis, and intellectual property fundamentals. Demonstrated practical skills in pitching, presenting, sales, Lean start-up methodology,
+                             and Business Model Canvas application through hands-on problem-solving projects. <a href="https://ca.badgr.com/public/assertions/TaYWNmaNQQSI8EfaAH1M1w?identity__email=dhiman9@uwindsor.ca">view credential</a></li>
+                    </ul>
+                    <ul>
+                    <li><span style="font-weight: bold;">NextGen CTO, EPICentre<br><span style="font-size: 95%;">University of Windsor</span></span><br> Gained a comprehensive understanding of diverse IP forms, strategic mastery, and specialized training in IP Licensing, protection, and enforcement.
+                    <a href="https://ca.badgr.com/public/assertions/nWNG0gDATK6XkOASzVe6uQ">view credential</a></li>
+                    </ul>
+                    <ul>
+                        <li><span style="font-weight: bold;">Dataiku Frontrunner Awards<br><span style="font-size: 95%;">Moonshot Pioneers</span></span><br> We enabled clients to generate SEO-rich product descriptions effortlessly with Content AI. This approach expands audience reach by seamlessly integrating keywords. It also boosts copywriters' creativity and provides fresh perspectives on content creation.
+                        <a href="https://community.dataiku.com/t5/Dataiku-Frontrunner-Awards/Wipro-Ltd-Wipro-AI-Solutions-Leveraging-Content-AI-to-Generate/ta-p/28647">view entry</a></li>
+                        </ul>
+                </section>
+
+        
+                </section>
+
+                <section id="contact">
+                    <h2>Contact Me</h2>
+                    <p><span style="font-weight: bold;">Location:</span> Windsor, ON</p>
+                    <p><span style="font-weight: bold;">LinkedIn:</span> <a href="www.linkedin.com/in/aeshita-dhiman">www.linkedin.com/in/aeshita-dhiman</a></p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Aeshita Dhiman . All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
