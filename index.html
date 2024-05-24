@@ -87,7 +87,21 @@
             padding: 20px 0;
             text-align: center;
         }
-        
+         .resume-link {
+            color: #333; /* Dark muted purple */
+            text-decoration: none;
+            transition: color 0.3s; /* Smooth color transition */
+            display: inline-block;
+            align-content: center;
+        }
+        .resume-link:hover {
+            color:  #563d56; /* Lighter muted purple on hover */
+        }
+        .resume-icon {
+            max-width: 20px;
+            max-height: 20px;
+            
+        }
         @media (min-width: 768px) {
             .left-column {
                 position: sticky;
@@ -110,6 +124,9 @@
                 <div class="left-column">
                     <img src="assets/profile_picture1.jpeg" alt="Profile Picture" class="profile-pic">
                     <ul class="menu montserrat-font">
+                        <li><a href="assets/AESHITADHIMAN.pdf" class="resume-link">
+                        <img src="assets/pdf-file-icon.png" alt="Adobe Acrobat Icon" class="resume-icon">
+                        Resume</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#education">Education</a></li>
                         <li><a href="#skills">Skills</a></li>
